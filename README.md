@@ -1,2 +1,12 @@
-# BD2PROYECTO
-Proyecto para la clase de bases de datos 2 impartida por el Ingeniero Emilson Acosta. Integrantes Jose Martinez, Cesar, Ramon
+# PROYECTO: ETL EN UN LENGUAJE DE PROGRAMACIÓN PARA REALIZAR REPORTES EN UN SOFTWARE
+## UNIVERSIDAD NACIONAL AUTÓNOMA DE HONDURAS U.N.A.H.
+## CLASE : BASES DE DATOS 2
+### INTEGRANTES:
+#### JOSÉ ROBERTO MARTÍNEZ MORALES 
+#### NÚMERO DE CUENTA: 20191031721 
+#### CESAR BANEGAS 
+#### NÚMERO DE CUENTA: 
+#### RAMÓN 
+#### NÚMERO DE CUENTA: 
+
+## Enunciado del PROYECTO:
