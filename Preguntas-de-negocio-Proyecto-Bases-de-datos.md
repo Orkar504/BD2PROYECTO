@@ -5,6 +5,8 @@
 
 #### Por: José Roberto Martínez Morales 
 #### No. Cuenta: 20191031721
+#### Cesar 
+#### Ramon
 
 1. Cual es la demografía de los clientes que compran (Sexo, edad) 
 2. En que cuarto(Estación: primavera, verano etc...) se venden mas bicicletas
@@ -46,10 +48,67 @@
 10. [x] En porcentajes, que porcentaje ocupa cada marca de bicicletas en ventas
 
 
+
+
+## DimCategoria
+* Categoria_id Number  PRIMARY KEY
+* Nombre VARCHAR2 
+
+## DimMarca
+* Marca_ID NUMBER PRIMARY KEY
+
+## DimTienda
+* tienda_id number primary key
+* nombre VARCHAR2
+* telefono VARCHAR2
+* email varchar2
+* direccion varchar2
+* ciudad varchar2
+* estado varchar2
+* codigo_postal varchar2
+
+## DimProducto
+* Producto_ID NUMBER PRIMARY KEY 
+* Producto_Nombre VARCHAR2
+* Marca_ID NUMBER FOREIGN KEY REFERENCES Marca_id from DimMarca
+* CATEOGORIA_ID NUMBER FOREIGN KEY REFERENCES Categoria_ID from DimCategoria
+* modelo_anio NUMBER 
+
+
+
+## DimCliente
+* cliente_id number primary key
+* nombre VARCHAR2
+* apellido VARCHAR2
+* telefono VARCHAR2
+* email varchar2
+* direccion varchar2
+* ciudad varchar2
+* estado varchar2
+* codigo_postal varchar2
+
+## DimEmpleado
+* empleado_id number primary key
+* nombre VARCHAR2
+* apellido VARCHAR2
+* telefono VARCHAR2
+* email varchar2
+* activo number(2)
+* tienda_id NUMBER FOREIGN KEY REFERENCES Tienda_id from DimTienda
+* manager_id NUMBER FOREIGN KEY REFERENCES empleado_id from Dim Empleado
+
+## DIM TIEMPO 
+* FECHA_ID NUMBER PRIMARY KEY
+* FECHA DATE 
+* Dia_Semana VARCHAR2
+* MES NUMBER 
+* TRIMESTRE
+* ANIO 
+
 # HECHOVENTAS
 * VENTA_ID NUMBER PRIMARY KEY INDEX AUTOINCREMENT 
-*  FECHA_ID (SE BASA EN ORDER ID PARA QUE SEA UNICO) FOREIGN KEY NUMBER
-* PRODUCTO_ID FOREIGN KEY NUMBER 
+* FECHA_ID (SE BASA EN ORDER ID PARA QUE SEA UNICO) FOREIGN KEY NUMBER
+* PRODUCTO_ID FOREIGN KEY NUMBER REFERENCES Producto_ID from DimProducto
 * CLIENTE_ID FOREIGN KEY NUMBER
 * TIENDA_ID FOREIGN KEY NUMBER
 * EMPLEADO_ID FOREIGN KEY NUMBER
@@ -57,4 +116,3 @@
 * PRECIO_UNITARIO NUMBER(10,2)
 * DESCUENTO NUMBER NUMBER (4,2) DEFAULT 0 NO NULL
 * MONTO_TOTAL NUMBER (10,2) 
-
