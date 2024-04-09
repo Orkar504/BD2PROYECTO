@@ -56,6 +56,7 @@
 
 ## DimMarca
 * Marca_ID NUMBER PRIMARY KEY
+* Nombre VARCHAR2
 
 ## DimTienda
 * tienda_id number primary key
