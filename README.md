@@ -10,3 +10,11 @@
 #### NÚMERO DE CUENTA: 
 
 ## Enunciado del PROYECTO:
+Se pide desarrollar un proyecto de DATAWAREHOUSE para 
+una empresa real o ficticia, para esto se debe contar con una base de datos OLTP que 
+tenga suficiente información almacenada y que permita la generación de reportes 
+mediante el uso de la Inteligencia de Negocios.
+
+[Documento con el enunciado del proyecto](https://github.com/Orkar504/BD2PROYECTO/blob/main/Descripci%C3%B3n%20del%20proyecto%20I%20P%202024%20-%20III%20Unidad.pdf)
+## Base a utilizar
+### BD_BICICLETAS
